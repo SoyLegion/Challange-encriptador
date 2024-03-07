@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="encryptContainer">
+                <div class="spaceLogo">
+                <div class="logoContainer">
+                    <img class="logo" src="img/Logo (1).png" alt="Logo Alura">
+                </div>
+            </div>
+                <div class="textContainer">
+                    <input class="text" id="inputTexto" type="text" placeholder="Ingrese el texto aqui">
+                </div>
+                <div class="buttonContainer">
+                    <div class="alert">
+                        <div>
+                            <img src="img/Vector.png" alt="Advertencia">
+                        </div>
+                        <p class="alertParagraph">Solo minúsculas y sin acentos</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="encryptbutton">
+                            <button class="encrypt" onclick="encriptar()"> Encriptar</button>
+                        </div>
+                        <div class="decryptButton">
+                            <button class="decrypt" onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="resultContainer">
+            <div class="rectangleContainer">
+                    <div class="imageContainer" >
+                        <img class="image" id="img" src="img/Doll.png.png" alt="imagen">
+                    </div>
+                    <div class="answerContainer" >
+                        <div class="messageContainer">
+                            <p class="answerMessage" id="resNinguna">Ningún mensaje fue encontrado</p>
+                        </div>
+                        <div class="textContainer" >
+                            <textarea id="textAreaRes" class="text2" name="texto" cols="30" rows="4" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                        </div>
+                        <div class="hiddenButton" >
+                            <button id="copiar" class="buttonCopy" onclick="copiar()">Copiar</button>
+                        </div>
+                    </div>            
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Powered by ©SoyLegion
+    </footer>
+</body>
+</html>
+  
